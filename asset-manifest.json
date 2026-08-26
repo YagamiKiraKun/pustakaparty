@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/pustakaparty/static/css/main.dda4b284.css",
+    "main.js": "/pustakaparty/static/js/main.c3d7ab33.js",
+    "static/js/453.8a3fd8a0.chunk.js": "/pustakaparty/static/js/453.8a3fd8a0.chunk.js",
+    "index.html": "/pustakaparty/index.html",
+    "main.dda4b284.css.map": "/pustakaparty/static/css/main.dda4b284.css.map",
+    "main.c3d7ab33.js.map": "/pustakaparty/static/js/main.c3d7ab33.js.map",
+    "453.8a3fd8a0.chunk.js.map": "/pustakaparty/static/js/453.8a3fd8a0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dda4b284.css",
+    "static/js/main.c3d7ab33.js"
+  ]
+}
