@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/pustakaparty/static/css/main.74d8a93b.css",
-    "main.js": "/pustakaparty/static/js/main.23fa11d3.js",
+    "main.js": "/pustakaparty/static/js/main.5336ed62.js",
     "static/js/453.8a3fd8a0.chunk.js": "/pustakaparty/static/js/453.8a3fd8a0.chunk.js",
     "index.html": "/pustakaparty/index.html",
     "main.74d8a93b.css.map": "/pustakaparty/static/css/main.74d8a93b.css.map",
-    "main.23fa11d3.js.map": "/pustakaparty/static/js/main.23fa11d3.js.map",
+    "main.5336ed62.js.map": "/pustakaparty/static/js/main.5336ed62.js.map",
     "453.8a3fd8a0.chunk.js.map": "/pustakaparty/static/js/453.8a3fd8a0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.74d8a93b.css",
-    "static/js/main.23fa11d3.js"
+    "static/js/main.5336ed62.js"
   ]
 }
