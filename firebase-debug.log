@@ -1,0 +1,104 @@
+[debug] [2026-08-26T15:51:32.353Z] ----------------------------------------------------------------------
+[debug] [2026-08-26T15:51:32.358Z] Command:       /Users/zidane/.nvm/versions/node/v22.23.1/bin/node /Users/zidane/.nvm/versions/node/v22.23.1/bin/firebase deploy
+[debug] [2026-08-26T15:51:32.358Z] CLI Version:   15.28.1
+[debug] [2026-08-26T15:51:32.358Z] Platform:      darwin
+[debug] [2026-08-26T15:51:32.358Z] Node Version:  v22.23.1
+[debug] [2026-08-26T15:51:32.358Z] Detected Agent: unknown
+[debug] [2026-08-26T15:51:32.358Z] Time:          Wed Aug 26 2026 22:51:32 GMT+0700 (Western Indonesia Time)
+[debug] [2026-08-26T15:51:32.358Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-08-26T15:51:33.125Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-08-26T15:51:33.125Z] > authorizing via signed-in user (zidaneputraf@gmail.com)
+[debug] [2026-08-26T15:51:33.125Z] [iam] checking project pustakaparty for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-08-26T15:51:33.133Z] Checked if tokens are valid: true, expires at: 1787761308654
+[debug] [2026-08-26T15:51:33.133Z] Checked if tokens are valid: true, expires at: 1787761308654
+[debug] [2026-08-26T15:51:33.133Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/pustakaparty:testIamPermissions [none]
+[debug] [2026-08-26T15:51:33.133Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/pustakaparty:testIamPermissions  x-goog-user-project=pustakaparty
+[debug] [2026-08-26T15:51:33.134Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pustakaparty:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-08-26T15:51:33.517Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/pustakaparty:testIamPermissions 200
+[debug] [2026-08-26T15:51:33.517Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pustakaparty:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-08-26T15:51:33.518Z] Checked if tokens are valid: true, expires at: 1787761308654
+[debug] [2026-08-26T15:51:33.518Z] Checked if tokens are valid: true, expires at: 1787761308654
+[debug] [2026-08-26T15:51:33.519Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pustakaparty [none]
+[debug] [2026-08-26T15:51:35.844Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pustakaparty 200
+[debug] [2026-08-26T15:51:35.844Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pustakaparty {"projectId":"pustakaparty","projectNumber":"660433022558","displayName":"PustakaParty","name":"projects/pustakaparty","resources":{"hostingSite":"pustakaparty"},"state":"ACTIVE","labels":{"firebase":"enabled"},"etag":"1_7e8bec59-3c28-41a9-9925-66f5a22c5809"}
+[info] 
+[info] === Deploying to 'pustakaparty'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-08-26T15:51:35.849Z] Checked if tokens are valid: true, expires at: 1787761308654
+[debug] [2026-08-26T15:51:35.849Z] Checked if tokens are valid: true, expires at: 1787761308654
+[debug] [2026-08-26T15:51:35.849Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/pustakaparty/sites/pustakaparty [none]
+[debug] [2026-08-26T15:51:41.680Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/pustakaparty/sites/pustakaparty 200
+[debug] [2026-08-26T15:51:41.680Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/pustakaparty/sites/pustakaparty {"name":"projects/pustakaparty/sites/pustakaparty","defaultUrl":"https://pustakaparty.web.app","type":"DEFAULT_SITE"}
+[debug] [2026-08-26T15:51:41.685Z] Checked if tokens are valid: true, expires at: 1787761308654
+[debug] [2026-08-26T15:51:41.685Z] Checked if tokens are valid: true, expires at: 1787761308654
+[debug] [2026-08-26T15:51:41.685Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/pustakaparty/versions [none]
+[debug] [2026-08-26T15:51:41.685Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/pustakaparty/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-08-26T15:51:43.486Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/pustakaparty/versions 200
+[debug] [2026-08-26T15:51:43.487Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/pustakaparty/versions {"name":"projects/660433022558/sites/pustakaparty/versions/6401d64f1b56bf2f","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[pustakaparty]: beginning deploy... 
+[info] i  hosting[pustakaparty]: found 16 files in build 
+[debug] [2026-08-26T15:51:43.601Z] [hosting] uploading with 200 concurrency
+[debug] [2026-08-26T15:51:43.842Z] Checked if tokens are valid: true, expires at: 1787761308654
+[debug] [2026-08-26T15:51:43.842Z] Checked if tokens are valid: true, expires at: 1787761308654
+[debug] [2026-08-26T15:51:43.842Z] [hosting] hash cache [YnVpbGQ] stored for 16 files
+[debug] [2026-08-26T15:51:43.842Z] [hosting][hash queue][FINAL] {"max":235,"min":6,"avg":24.9375,"active":0,"complete":16,"success":16,"errored":0,"retried":0,"total":16,"elapsed":238}
+[debug] [2026-08-26T15:51:43.842Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/660433022558/sites/pustakaparty/versions/6401d64f1b56bf2f:populateFiles [none]
+[debug] [2026-08-26T15:51:43.842Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/660433022558/sites/pustakaparty/versions/6401d64f1b56bf2f:populateFiles {"files":{"/robots.txt":"391d14b3c2f8c9143a27a28c7399585142228d4d1bdbe2c87ac946de411fa9a2","/index.html":"45e62b52333c5faa9153afd113214ca479abad4731a682917751700b1399007e","/logo192.png":"f66564670b5bfe49f3f04a5b63107bae60f4a7736f1d3b83aa0115f7acf45150","/logo512.png":"2356e0b814e58a349935c8de17226873d615d088a867d591fef48a64c80c9a2f","/manifest.json":"4e1d3adad9ce7e17c0d13fac197f1c27091906f4ecf3909c9f51247bff345118","/asset-manifest.json":"ae6209fc7c46a8de8fabbbf8f1b8845af50477c186cc72c09e52435185f7ef98","/favicon.ico":"1463be9bedc82e16f9364eec7a1f5152cbe56229401381eed65c1496cb884407","/404.html":"45e62b52333c5faa9153afd113214ca479abad4731a682917751700b1399007e","/static/js/main.5336ed62.js.LICENSE.txt":"e988885b29a50cec38fff39fb8faa15ad2906b41a3d8b7b815e1939127ef57f1","/static/js/453.8a3fd8a0.chunk.js":"00283dd6db07302c8cb23fcbd1a7d832fdbfe92c612c797bc2ad927d06b02781","/static/css/main.74d8a93b.css":"b5f576342d955ec47dce8ebc3677cfcf6f4cf99278ece12fc78384bdb8f593df","/static/js/453.8a3fd8a0.chunk.js.map":"72408b08a81c4e54135f96bff4dd3d5079add54fab832ebc4872641be3c7af51","/static/css/main.74d8a93b.css.map":"0b45f88d8a30780acec252737d27b76bda7a865a9ce1308679298c70386aede7","/oibp.png":"ec8667b423bf7a805a0a20dc04824363fcde6fbd64df1431afb1038e7bffbebe","/static/js/main.5336ed62.js":"dbc8b07795ec67dc2b32b517a5a893326f97983c7816afb055a00f6cf2a3a00a","/static/js/main.5336ed62.js.map":"2a9e7a39c1ff89762f9b80c1a3c939c072c692ce6f64d6dc2580af6c588c6e5b"}}
+[debug] [2026-08-26T15:51:46.077Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/660433022558/sites/pustakaparty/versions/6401d64f1b56bf2f:populateFiles 200
+[debug] [2026-08-26T15:51:46.077Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/660433022558/sites/pustakaparty/versions/6401d64f1b56bf2f:populateFiles {"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/pustakaparty/versions/6401d64f1b56bf2f/files"}
+[debug] [2026-08-26T15:51:46.078Z] [hosting][populate queue][FINAL] {"max":2235,"min":2235,"avg":2235,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2236}
+[debug] [2026-08-26T15:51:46.078Z] [hosting] uploads queued: 0
+[debug] [2026-08-26T15:51:46.078Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":0,"success":0,"errored":0,"retried":0,"total":0,"elapsed":1787759506078}
+[info] ✔  hosting[pustakaparty]: file upload complete 
+[debug] [2026-08-26T15:51:46.083Z] [hosting] deploy completed after 2504ms
+[debug] [2026-08-26T15:51:46.083Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "pustakaparty"
+    },
+    "version": "projects/660433022558/sites/pustakaparty/versions/6401d64f1b56bf2f"
+  }
+]
+[info] i  hosting[pustakaparty]: finalizing version... 
+[debug] [2026-08-26T15:51:46.085Z] Checked if tokens are valid: true, expires at: 1787761308654
+[debug] [2026-08-26T15:51:46.085Z] Checked if tokens are valid: true, expires at: 1787761308654
+[debug] [2026-08-26T15:51:46.088Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/pustakaparty/versions/6401d64f1b56bf2f updateMask=status%2Cconfig
+[debug] [2026-08-26T15:51:46.088Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/pustakaparty/versions/6401d64f1b56bf2f {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2026-08-26T15:51:47.200Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/pustakaparty/versions/6401d64f1b56bf2f 200
+[debug] [2026-08-26T15:51:47.200Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/pustakaparty/versions/6401d64f1b56bf2f {"name":"projects/660433022558/sites/pustakaparty/versions/6401d64f1b56bf2f","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-08-26T15:51:42.195747Z","createUser":{"email":"zidaneputraf@gmail.com"},"finalizeTime":"2026-08-26T15:51:46.895374Z","finalizeUser":{"email":"zidaneputraf@gmail.com"}}
+[debug] [2026-08-26T15:51:47.200Z] [hosting] finalized version for pustakaparty:[object Object]
+[info] ✔  hosting[pustakaparty]: version finalized 
+[info] i  hosting[pustakaparty]: releasing new version... 
+[debug] [2026-08-26T15:51:47.201Z] Checked if tokens are valid: true, expires at: 1787761308654
+[debug] [2026-08-26T15:51:47.201Z] Checked if tokens are valid: true, expires at: 1787761308654
+[debug] [2026-08-26T15:51:47.201Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/pustakaparty/channels/live/releases versionName=projects%2F660433022558%2Fsites%2Fpustakaparty%2Fversions%2F6401d64f1b56bf2f
+[debug] [2026-08-26T15:51:47.201Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/pustakaparty/channels/live/releases {}
+[debug] [2026-08-26T15:51:48.331Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/pustakaparty/channels/live/releases 200
+[debug] [2026-08-26T15:51:48.331Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/pustakaparty/channels/live/releases {"name":"projects/660433022558/sites/pustakaparty/channels/live/releases/1787759507283000","version":{"name":"projects/660433022558/sites/pustakaparty/versions/6401d64f1b56bf2f","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-08-26T15:51:42.195747Z","createUser":{"email":"zidaneputraf@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJg815sKkdPDIB8ziDTZ-zi8hlX59pPWj5HfUwevz6FhXdRBA=mo"},"finalizeTime":"2026-08-26T15:51:46.895374Z","finalizeUser":{"email":"zidaneputraf@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJg815sKkdPDIB8ziDTZ-zi8hlX59pPWj5HfUwevz6FhXdRBA=mo"}},"type":"DEPLOY","releaseTime":"2026-08-26T15:51:47.283Z","releaseUser":{"email":"zidaneputraf@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJg815sKkdPDIB8ziDTZ-zi8hlX59pPWj5HfUwevz6FhXdRBA=mo"}}
+[debug] [2026-08-26T15:51:48.331Z] [hosting] release: {"name":"projects/660433022558/sites/pustakaparty/channels/live/releases/1787759507283000","version":{"name":"projects/660433022558/sites/pustakaparty/versions/6401d64f1b56bf2f","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-08-26T15:51:42.195747Z","createUser":{"email":"zidaneputraf@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJg815sKkdPDIB8ziDTZ-zi8hlX59pPWj5HfUwevz6FhXdRBA=mo"},"finalizeTime":"2026-08-26T15:51:46.895374Z","finalizeUser":{"email":"zidaneputraf@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJg815sKkdPDIB8ziDTZ-zi8hlX59pPWj5HfUwevz6FhXdRBA=mo"}},"type":"DEPLOY","releaseTime":"2026-08-26T15:51:47.283Z","releaseUser":{"email":"zidaneputraf@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJg815sKkdPDIB8ziDTZ-zi8hlX59pPWj5HfUwevz6FhXdRBA=mo"}}
+[info] ✔  hosting[pustakaparty]: release complete 
+[info] 
+[info] ✔  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/pustakaparty/overview
+[info] Hosting URL: https://pustakaparty.web.app
+[debug] [2026-08-26T15:51:53.660Z] Error: Timed out.
+    at Timeout._onTimeout (/Users/zidane/.nvm/versions/node/v22.23.1/lib/node_modules/firebase-tools/lib/utils.js:296:49)
+    at listOnTimeout (node:internal/timers:585:17)
+    at process.processTimers (node:internal/timers:521:7)
+[error] 
+[error] Error: An unexpected error has occurred.
